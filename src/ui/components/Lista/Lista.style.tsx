@@ -22,12 +22,25 @@ export const ItemLista = styled('li')`
 
 export const Foto = styled('img')`
     width: 100%;
+    height: 245px;
+    border-radius: 5px;
+
+    ${({ theme }) => theme.breakpoints.down('md')} {
+        height: auto;
+    }
 `
 
 export const Infotmacoes = styled('div')`
-   
+   display: flex;
+   flex-direction: column;
+   gap: ${({ theme }) => theme.spacing(2)};
 `
 
-export const Nome = styled('h2')``;
+export const Nome = styled('h2')`
+    margin: 0;
+`;
 
-export const Descricao = styled('p')``;
+export const Descricao = styled('p')`
+    margin: 0;
+    word-break: break-word;
+`;
