@@ -76,11 +76,11 @@ const Home: NextPage = () => {
       </DialogActions>
     </Dialog>
     <Snackbar 
-      open={mensagem.length > 0}
-      message={mensagem}
-      autoHideDuration={2500}
-      onClose={() => setMensagem('')}
-    />
+        open={mensagem.length > 0}
+        message={mensagem}
+        autoHideDuration={2500}
+        onClose={() => setMensagem('')}
+      />
     </div>
   )
 }

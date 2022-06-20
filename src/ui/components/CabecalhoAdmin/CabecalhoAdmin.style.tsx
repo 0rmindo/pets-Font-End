@@ -17,7 +17,9 @@ export const CabecalhoContainer = styled('header')`
     }
 `;
 
-export const Logo = styled('img')``;
+export const Logo = styled('img')`
+    width: 125px;
+`;
 
 export const LinksContainer = styled('nav')`
     display: flex;
